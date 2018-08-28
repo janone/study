@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    name: test
+    url: jdbc:mysql://192.168.1.56:3306/crawlbase
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    
+  jpa:
+    database: MYSQL
+    show-sql: true  # Show or not log for each sql query
+    hibernate:
+      ddl-auto: update  # Hibernate ddl auto (create, create-drop, update)
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy  # Naming strategy
+      dialect: org.hibernate.dialect.MySQL5Dialect  # stripped before adding them to the entity manager)
+ 
