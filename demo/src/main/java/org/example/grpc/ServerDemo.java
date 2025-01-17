@@ -5,6 +5,7 @@ import io.grpc.ServerBuilder;
 import io.grpc.stub.StreamObserver;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public class ServerDemo {
 
@@ -72,6 +73,14 @@ public class ServerDemo {
 
             // 表示完成调用
             responseObserver.onCompleted();
+
+            try {
+                TimeUnit.SECONDS.sleep(10);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+
+            System.out.println("down stream process");
         }
     }
 

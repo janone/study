@@ -43,6 +43,21 @@
             <version>6.0.53</version>
             <scope>provided</scope>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.vavr/vavr -->
+        <dependency>
+            <groupId>io.vavr</groupId>
+            <artifactId>vavr</artifactId>
+            <version>0.10.4</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.hazelcast/hazelcast-all -->
+        <dependency>
+            <groupId>com.hazelcast</groupId>
+            <artifactId>hazelcast-all</artifactId>
+            <version>4.2.8</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>
